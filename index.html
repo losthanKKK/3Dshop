@@ -1,0 +1,61 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>主页</title>
+<link href="css/index.css" rel="stylesheet" type="text/css" media="all" />
+<script src="js/jquery.min.js"></script>
+<script src="js/binary.js"></script>
+<script type="text/javascript">	
+
+	function minions(){
+		window.location.href="/minions";
+	}
+	
+	function stitch(){
+		window.location.href="/stitch";
+	}
+	$(function(){
+		/*
+		var client = new BinaryClient('ws://localhost:9000/binary-endpoint');
+		// Wait for connection to BinaryJS server
+		client.on('open', function(){
+			console.log("connection on!");
+			var buf = new ArrayBuffer(8);
+			var dv = new DataView(buf);
+			dv.setInt32(0, 25); 
+			dv.setFloat32(4, 2.5);
+			var blob = new Blob([buf]);
+			client.send(blob, {name: 'test', size: blob.size});
+		});
+		*/
+	});
+	
+	
+</script>
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+		<div id="banner">
+		</div>
+	</div>
+	<div id="pagebody">
+			<div id>
+				<div id="sideone">
+					<img src="drop1.png" style="position:absolute;top:-120px;right:-90px"></img>
+					<img src="minions.png" style="width:200px;height:270px;border-radius:25px;margin:-10px -10px -20px -10px" ></img>
+					<p id="word">小黄人</p>
+					<div id="button" onclick="minions()" >进入</div>
+				</div>
+				<div id="sidetwo">
+					<img src="drop2.png" style="position:absolute;top:-120px;right:-95px"></img>
+					<img src="stitch.png" style="width:200px;height:270px;border-radius:25px;margin:-10px -10px -20px -10px"></img>
+					<p id="word">史迪仔</p>
+					<div id="button" onclick="stitch()">进入</div>
+				</div>	
+			</div>
+	</div>
+</div>
+</body>
+</html>
